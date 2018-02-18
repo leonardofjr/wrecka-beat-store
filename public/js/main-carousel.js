@@ -4,7 +4,6 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         pauseOnHover: false,
         pauseOnFocus: false,
-        dots: true,
         infinite: true,
         speed: 500,
         fade: true,

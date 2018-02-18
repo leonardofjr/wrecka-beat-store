@@ -11,8 +11,17 @@
     <div class="col-lg-8">
       <h2 class="text-center px-3 py-2">Get in Touch</h2>
       <p class="text-center px-3 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam ipsa libero voluptates pariatur quae repellendus vitae, eaque voluptatum doloribus cum magnam modi dolores excepturi minus iure enim soluta molestias.</p>
-      <form class="mr-auto ml-auto py-4">
-        <div class="form-group">
+      @if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+      <form method="POST" action="/contact" class="mr-auto ml-auto py-4 contact-form">
+       {{ csrf_field() }} <div class="form-group">
           <input class="form-control" type="text" name="contact-form-name" placeholder="Name"/>
         </div>
         <div class="form-group">

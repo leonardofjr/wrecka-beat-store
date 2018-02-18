@@ -1,10 +1,8 @@
 <div class="col-lg-4 col-md-4 col-sm-4 col-12 fade-in">
 
-
-    <{{ $headingTag1 or 'h3' }}>
+    <h3 class="text-center">
         {{ $heading1 or 'Heading' }}
-    </{{ $headingTag1 or 'h3' }}>
-
+    </h3>
     <div class="img-container d-flex align-items-center justify-content-center">
         <img src= "{{ $img1 or '#' }}" alt="">
     </div>
@@ -17,9 +15,9 @@
 <div class="col-lg-4 col-md-4 col-sm-4 col-12 fade-in">
 
 
-    <{{ $headingTag2 or 'h3' }}>
+    <h3 class="text-center">
         {{ $heading2 or 'Heading' }}
-    </{{ $headingTag2 or 'h3' }}>
+    </h3>
 
     <div class="img-container d-flex align-items-center justify-content-center">
         <img src= "{{ $img2 or '#' }}" alt="">
@@ -33,9 +31,9 @@
 <div class="col-lg-4 col-md-4 col-sm-4 col-12 fade-in">
 
 
-    <{{ $headingTag3 or 'h3' }}>
+    <h3 class="text-center">
         {{ $heading3 or 'Heading' }}
-    </{{ $headingTag3 or 'h3' }}>
+    </h3>
 
     <div class="img-container d-flex align-items-center justify-content-center">
         <img src= "{{ $img3 or '#' }}" alt="">

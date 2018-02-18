@@ -35,17 +35,14 @@
                     </div>
                     <div class="about-content row">
                          @include('components.three-column-heading-paragraph-image', [
-                         'headingTag1' => 'h3',
                          'heading1' => $data['heading2'],
                          'text1' => $data['text2'], 
                          'img1' => $data['img1'],
 
-                         'headingTag2' => 'h3',
                          'heading2' => $data['heading3'],
                          'text2' => $data['text3'],
                          'img2' => $data['img2'],
 
-                         'headingTag3' => 'h3',
                          'heading3' => $data['heading4'],
                          'text3' => $data['text4'],
                          'img3' => $data['img3']

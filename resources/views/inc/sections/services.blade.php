@@ -1,7 +1,7 @@
 <a id="services"></a>
 <div class="fade-in">
-<h2>Our Auto Services: Brakes, A/C, Fuel Injection, Alignment & More</h2>
-<p>Triple C Automotive was established on January 2017 in Markham by Carlos Felipa who is a Master Mechanic. Carlos Felipa has been in the car repair industry since he was a child and has over a decade of experience. He has worked on every possible car repair job. Carlos has worked in all major car shops like Canadian Tire, Active Green Ross and dealerships in all over the Great Toronto Area. He has replaced engines, rebuilt engines, replaced transmissions of all makes and models, just name the job he has done it.</p>
+    <h2 class="text-center">Our Auto Services: Brakes, A/C, Fuel Injection, Alignment & More</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque rerum ab ipsa maxime odio, adipisci aliquid voluptate harum excepturi, dolor suscipit eius quos praesentium vitae sed eveniet beatae fugit.</p>
 </div>
   <div class="services-content row py-t">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 p-5 fade-in">

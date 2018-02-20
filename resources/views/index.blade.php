@@ -4,7 +4,7 @@
         <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
         <title>Triple C Automotive</title>
         <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Open+Sans:300,400|Oswald:200,300,400|Roboto:100,300,400|Vollkorn" rel="stylesheet" type="text/css">
+        <link  href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,100,200,300%7CHind:400,300" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/google-places/google-places.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,53 +25,19 @@
         <main>
         <div class="container">
             <div class="content">
-                <section class="about-container py-5"><a id="about"></a>
-                    <div class="about-header fade-in">
-                        @include('components.one-column-paragraph-heading', [
-                        'headingTag' => 'h2', 
-                        'heading' => $data['heading1'],
-                        'text' => $data['text1']
-                        ])
-                    </div>
-                    <div class="about-content row">
-                         @include('components.three-column-heading-paragraph-image', [
-                         'heading1' => $data['heading2'],
-                         'text1' => $data['text2'], 
-                         'img1' => $data['img1'],
-
-                         'heading2' => $data['heading3'],
-                         'text2' => $data['text3'],
-                         'img2' => $data['img2'],
-
-                         'heading3' => $data['heading4'],
-                         'text3' => $data['text4'],
-                         'img3' => $data['img3']
-                         ])
-                    </div>
+                <section class="player-container py-5"><a id="player"></a>
+                    @include('inc.sections.player')
+                </section>
+                <section class="newsletter-container py-5"><a id="newsletter"></a>
+                    @include('inc.sections.newsletter')
                 </section>
 
                 <section class="featured-content row text-center py-5">
-                   @include('components.three-column-heading-image-description-button', [
-                         'heading1' => $data['heading5'],
-                         'description1' => $data['description1'], 
-                         'img1' => $data['img4'],
-                         'buttonName1' => $data['buttonName1'],
-
-                         'heading2' => $data['heading6'],
-                         'description2' => $data['description2'], 
-                         'img2' => $data['img5'],
-                         'buttonName2' => $data['buttonName2'],
-
-                         'heading3' => $data['heading7'],
-                         'description3' => $data['description3'], 
-                         'img3' => $data['img6'],
-                         'buttonName3' => $data['buttonName3'],
-
-                         ])
+                    @include('inc.sections.licensing-info')
                 </section>
 
                 <section>
-                    @include('inc.sections.services')
+                    @include('inc.sections.faq')
                 </section>
             </div>
         </div>
@@ -79,29 +45,11 @@
             @include('inc.sections.discounts')
         </section>
         <section class="map">
-            @include('components.map')
+            @include('inc.sections.contact-form')
         </section>
         </main>
         <footer>
             <a id="bottom"></a>
-            <div class="container py-5">
-                <div class="row">
-                    <div class="text-center col-lg-4">
-                        <div><a href="tel://012 345 6789"><i class="fa fa-5x fa-phone"></i>
-                            <p>Hire Me</p></a></div>
-                        <div><i class="fa fa-5x fa-map-marker"></i>
-                            <p>Address</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <h2 class="text-center px-3 py-2">Get in Touch</h2>
-                        <p class="text-center px-3 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam ipsa libero voluptates pariatur quae repellendus vitae, eaque voluptatum doloribus cum magnam modi dolores excepturi minus iure enim soluta molestias.</p>
-
-                        @include('components.contact-form')
-                    </div>
-                </div>
-            </div>
             <div class="site-info text-center py-4"><small>Copyright &copy; 2018</small></div>
         </footer>
     </body>

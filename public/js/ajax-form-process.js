@@ -59,17 +59,11 @@ $(document).ready(function () {
                 }
             },
             error: function (err) {
+                console.log(err);
                 response = err.responseJSON;
                 if (err.status === 422) {
-                    if (response.contactFormName) {
-                        $('.flash-message-newsletter-form-name span').html(response.contactFormName[0]);
-                        $('.flash-message-newsletter-form-name').removeClass('d-none');
-                    }
-                    else {
-                        $('.flash-message-newsletter-form-name').addClass('d-none');
-                    }
-                    if (response.contactFormEmail) {
-                        $('.flash-message-newsletter-form-email span').html(response.contactFormEmail[0]);
+                    if (response.newsletterFormEmail) {
+                        $('.flash-message-newsletter-form-email span').html(response.newsletterFormEmail[0]);
                         $('.flash-message-newsletter-form-email').removeClass('d-none');
                     }
                     else {

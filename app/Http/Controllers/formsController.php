@@ -10,15 +10,13 @@
     class FormsController extends Controller {
        
         public function postContact(MailFormValidationRequest $request) {
-
-
             $data = [
                 'name' => $request->input('contactFormName'),
                 'email' => $request->input('contactFormEmail'),
                 'inquiry' => $request->input('contactFormMessage'),
             ];
 
-            Mail::send('emails.process', $data , function ($m) use ($data) {
+            Mail::send('emails.contact-form', $data , function ($m) use ($data) {
             $m->from($data['email'], $data['name']);
             $m->to('leo@startupdesigns.ca')->subject('This mail is sent via contact form on triplecauto.ca');
         });
@@ -29,12 +27,11 @@
         public function postNewsletter(NewsletterFormValidationRequest $request) {
 
             $data = [
-                'name' => $request->input('newsletterFormName'),
                 'email' => $request->input('newsletterFormEmail'),
             ];
 
             Mail::send('emails.newsletter', $data , function ($m) use ($data) {
-            $m->from($data['email'], $data['name']);
+            $m->from($data['email'], $data['email']);
             $m->to('leo@startupdesigns.ca')->subject('A new user has subscribed to triplecauto.ca');
         });
 

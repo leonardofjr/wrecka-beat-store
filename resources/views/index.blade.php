@@ -52,19 +52,16 @@
 
                 <section class="featured-content row text-center py-5">
                    @include('components.three-column-heading-image-description-button', [
-                         'headingTag1' => 'h3',
                          'heading1' => $data['heading5'],
                          'description1' => $data['description1'], 
                          'img1' => $data['img4'],
                          'buttonName1' => $data['buttonName1'],
 
-                         'headingTag2' => 'h3',
                          'heading2' => $data['heading6'],
                          'description2' => $data['description2'], 
                          'img2' => $data['img5'],
                          'buttonName2' => $data['buttonName2'],
 
-                         'headingTag3' => 'h3',
                          'heading3' => $data['heading7'],
                          'description3' => $data['description3'], 
                          'img3' => $data['img6'],
@@ -86,7 +83,26 @@
         </section>
         </main>
         <footer>
-            @include('inc.sections.footer-content')
+            <a id="bottom"></a>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="text-center col-lg-4">
+                        <div><a href="tel://012 345 6789"><i class="fa fa-5x fa-phone"></i>
+                            <p>Hire Me</p></a></div>
+                        <div><i class="fa fa-5x fa-map-marker"></i>
+                            <p>Address</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <h2 class="text-center px-3 py-2">Get in Touch</h2>
+                        <p class="text-center px-3 py-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam ipsa libero voluptates pariatur quae repellendus vitae, eaque voluptatum doloribus cum magnam modi dolores excepturi minus iure enim soluta molestias.</p>
+
+                        @include('components.contact-form')
+                    </div>
+                </div>
+            </div>
+            <div class="site-info text-center py-4"><small>Copyright &copy; 2018</small></div>
         </footer>
     </body>
     <script src="js/slick-1.8.0/slick.min.js"></script>

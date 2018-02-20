@@ -14,3 +14,4 @@
 
 Route::get('/', 'PagesController@getHomepage');
 Route::post('/contact', 'FormsController@postContact');
+Route::post('/newsletter', 'FormsController@postNewsletter');

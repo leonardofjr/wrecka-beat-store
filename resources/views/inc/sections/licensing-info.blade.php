@@ -15,7 +15,7 @@
               <li class="li-bg"><span>Untagged MP3 File </span></li>
               <li><span>Sell Up To 5,000 Copies</span></li>
               <li class="li-bg"><span>Instant Delivery to Email Address</span></li>
-              <li><span>Must Credit "Prod. By David Metropolis"</span></li>
+              <li><span>Must Credit "Prod. By Miguel Felipa"</span></li>
               <li class="li-bg"><span>Beat Can Still Be Sold</span></li>
             </ul>
           </div>
@@ -37,7 +37,7 @@
               <li class="li-bg"><span>Untagged WAV + MP3 File</span></li>
               <li><span>Distribute Up To 10,000 Copies</span></li>
               <li class="li-bg"><span>Instant Delivery to Email Address</span></li>
-              <li><span>Must Credit "Prod. By David Metropolis"</span></li>
+              <li><span>Must Credit "Prod. By Miguel Felipa"</span></li>
               <li class="li-bg"><span>Beat Can Still Be Sold</span></li>
             </ul>
           </div>
@@ -59,7 +59,7 @@
               <li class="li-bg"><span>Untagged WAV + MP3 File (24bit) + Trackouts</span></li>
               <li><span>Unlimited Distruibution</span></li>
               <li class="li-bg"><span>Instant Delivery to Email Address</span></li>
-              <li><span>Must Credit "Prod. By David Metropolis"</span></li>
+              <li><span>Must Credit "Prod. By Miguel Felipa"</span></li>
               <li class="li-bg"><span>Beat Can Still Be Sold</span></li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
               <li class="li-bg"><span>Untagged WAV + MP3 File (24bit) + Trackouts</span></li>
               <li><span>Unlimited Distruibution</span></li>
               <li class="li-bg"><span>Instant Delivery to Email Address</span></li>
-              <li><span>Must Credit "Prod. By David Metropolis"</span></li>
+              <li><span>Must Credit "Prod. By Miguel Felipa"</span></li>
               <li class="li-bg"><span>Beat Will Be Automatically Removed From Site</span></li>
             </ul>
           </div>

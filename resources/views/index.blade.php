@@ -2,11 +2,12 @@
 <html>
     <head>
         <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
-        <title>Triple C Automotive</title>
+        <title>Bangout Beats</title>
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link  href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,100,200,300%7CHind:400,300" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/google-places/google-places.js"></script>
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/slick-1.8.0/slick.css">
         <link rel="stylesheet" href="./css/slick-1.8.0/slick-theme.css">
@@ -36,9 +37,14 @@
                     @include('inc.sections.licensing-info')
                 </section>
 
-                <section>
+                <section class="faq-content">
                     @include('inc.sections.faq')
                 </section>
+
+                <section class="services-content">
+                    @include('inc.sections.services')
+                </section>
+
             </div>
         </div>
         <section class="special-offers-container py-5">

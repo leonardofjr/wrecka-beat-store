@@ -49,7 +49,42 @@ $(document).ready(function () {
             $('#navbarToggleExternalContent').removeClass('show');
         })
     })
-});
+
+/* Paypal Functionality */
+    paypal.Button.render({
+
+        env: 'sandbox', // 'sandbox' Or 'production'
+
+        client: {
+            sandbox: 'AVhNqhe5spUXymCi_PSwtOmUEoUYldeE8XpqDLkgXcoPZUCZ-dRy_N7eXQ6oaKz-2tWP79-FIVNOr-XW',
+            production: 'AUjxn1kJozICyK7MGsPfVDxwJavmsJ7qWz9JS_q4AxLAkF8jB6Jwdb9tBuqjfYeyVsJTDN97D4PrFfWa'
+        },
+
+        commit: true, // Show a 'Pay Now' button
+
+        payment: function (data, actions) {
+            return actions.payment.create({
+                payment: {
+                    transactions: [
+                        {
+                            amount: { total: $('cost'), currency: 'CAD' }
+                        }
+                    ]
+                }
+            });
+        },
+
+        onAuthorize: function (data, actions) {
+            return actions.payment.execute().then(function (payment) {
+
+                // The payment is complete!
+                // You can now show a confirmation message to the customer
+            });
+        }
+
+    }, '#paypal-button');
+
+}); // Ends Here
 
 //** Helper Functions **/
 function revealElement(target, animation) {
